@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "node": "^17.7.2",
+    "nodemon": "^2.0.15"
+  },
+  "name": "to-do-list-mvc",
+  "description": "projeto to-do-list usando express, node, ejs e mongodb",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenanppCosta/to-do-list-mvc.git"
+  },
+  "author": "Renan Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenanppCosta/to-do-list-mvc/issues"
+  },
+  "homepage": "https://github.com/RenanppCosta/to-do-list-mvc#readme"
+}
