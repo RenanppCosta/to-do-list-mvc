@@ -1,7 +1,7 @@
-const routes = require("express").Router();
+const router = require("express").Router();
 const TaskController = require("../controllers/TaskController")
 
-routes.get("/home", TaskController.getAll)
+router.get("/home", TaskController.getAll)
 
 
-module.exports = routes
+module.exports = router
