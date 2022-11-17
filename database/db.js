@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectToDb = ()=>{
     mongoose.connect(
-        "mongodb+srv://renanppcosta:renan2012nha@cluster0.ypljb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+        "mongodb+srv://root:renan2012nha@cluster0.jpg5bwn.mongodb.net/?retryWrites=true&w=majority",
         {
             useNewUrlParser: true,
             useUnifiedTopology: true,
