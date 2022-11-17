@@ -1,3 +1,180 @@
-h1{
-    color: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body{
+    background-color: #202024;
+    color: white;
+}
+
+header{
+    background-color: #005290;
+    padding: 3rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+header h1{
+    padding-bottom: 3rem;
+}
+
+input{
+    margin: 0;
+    border: none;
+    width: 70%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #202024;
+    color: white;
+    outline: none;
+}
+
+button{
+    padding: 0.5rem;
+    background-color: #202024;
+    color: rgb(109, 109, 109);
+    border: none;
+    width: 15%;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+button:hover{
+    background-color: rgb(109, 109, 109);
+    color: white;
+}
+
+#tasks{
+    margin: 0.5rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    padding: 1rem;
+    background-color: rgb(22, 22, 24);
+}
+#tasks a{
+    text-decoration: none;
+    color: white;
+    padding: 0 0.3rem;
+    
+}
+
+#tasks a span{
+    color: #ccc;
+    font-style: italic;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+}
+
+ul li:nth-child(even){
+    background-color: #202040;
+}
+
+ul li:hover{
+    background-color: #5a5a5a;
+}
+
+#modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000080;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card{
+    background-color: #202024;
+    position: relative;
+}
+
+#card h2{
+    padding: 2rem;
+}
+
+#close{
+    color: white;
+    font-size: 2rem;
+    padding: 1.9rem;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+
+#close:hover{
+    color: red;
+}
+
+#title-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr{
+    width: 95%;
+    margin: 0 auto;
+}
+
+#card p{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+#buttons a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#button-yes{
+    border: 1px solid rgb(13, 151, 13);
+    color: rgb(13, 151, 13);
+    padding: 1.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+#button-yes:hover{
+    background-color: rgb(13, 151, 13);
+    color: white;
+}
+
+#button-no{
+    border: 1px solid rgb(168, 17, 17);
+    color: rgb(168, 17, 17);
+    padding: 1.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+#button-no:hover{
+    background-color: rgb(168, 17, 17);
+    color: white;
 }
