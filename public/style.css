@@ -178,3 +178,31 @@ hr{
     background-color: rgb(168, 17, 17);
     color: white;
 }
+
+.message{
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 99999999;
+}
+
+.message-danger{
+    background-color: #FFC7C7;
+    color:  rgb(168, 17, 17);
+}
+
+.message-success{
+    background-color: rgb(197, 255, 214) ;
+    color: rgb(13, 151, 13);
+}
+
+#close-message{
+    font-size: 2rem;
+    cursor: pointer;
+}
