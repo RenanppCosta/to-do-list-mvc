@@ -38,8 +38,11 @@
     <section id="tasks">
         <ul>
             <% tasksList.forEach((task) =>{ %>
-            <li>
-                <a href="/"><%= task.task %><span>Criado em <%= task.date.toLocaleDateString('pt-BR') %></span></a>
+            <li id="check-<%= task.check %>">
+                <div class="task">
+                    <a class="button-check-<%= task.check %>" href="/check/<%= task._id%>"><%= task.task %></a>
+                    <span>Criado em <%= task.date.toLocaleDateString('pt-BR') %></span>
+                </div>
                 <div>
                     <a href="/getById/<%= task._id %>/update"><i class="bi bi-pencil-square"></i></a>
                     <a href="/getById/<%= task._id %>/delete"><i class="bi bi-x-square"></i></a>

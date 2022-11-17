@@ -76,11 +76,18 @@ ul li{
     
 }
 
-#tasks a span{
+#tasks span{
     color: #ccc;
     font-style: italic;
     font-size: 0.8rem;
     padding-left: 1rem;
+}
+
+.task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 ul li:nth-child(even){
@@ -205,4 +212,22 @@ hr{
 #close-message{
     font-size: 2rem;
     cursor: pointer;
+}
+
+#check-true{
+    background-color: #888;
+    color: white;
+    text-decoration: line-through;
+}
+
+.button-check-true::before{
+    content: url("./check-square-fill.svg");
+    margin-right: 0.7rem;
+    text-align: center;   
+}
+
+.button-check-false::before{
+    content: url("./square.svg");
+    margin-right: 0.7rem;
+    text-align: center;   
 }
